@@ -1,21 +1,41 @@
 # IP Address Classifier
 
+[![PyPI version](https://badge.fury.io/py/ip-address-classifier.svg)](https://pypi.org/project/ip-address-classifier/)
+
 > A command-line tool to classify IPv4 addresses by class, scope (public/private), and validity.
 
 ## Description
 
-This Python script analyzes a user-entered IPv4 address and returns its class (A–E), whether it's public, private, loopback, or invalid. It’s designed for students or IT learners who want to reinforce their understanding of networking fundamentals.
+This Python CLI analyzes a user-entered IPv4 address and returns its class (A–E), whether it's public, private, loopback, or invalid. It’s designed for students or IT learners who want to reinforce their understanding of networking fundamentals.
 
-## Installation & Setup
+## 📦 Installation
+
+### Recommended (via `pipx`)
+
+```bash
+pipx install ip-address-classifier
+```
+
+> ⚠️ If `ipclass` isn’t recognized after install, run:
+
+```bash
+pipx ensurepath
+exec $SHELL  # or restart your terminal
+```
+
+### Or Manual (for development)
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/ip-address-classifier.git
 cd ip-address-classifier
-# Ensure Python 3 is installed
 python ip_address_classifier.py
 ```
 
-## Usage
+## 🚀 Usage
+
+```bash
+ipclass
+```
 
 Follow the prompt in the terminal:
 - Enter an IPv4 address in the format `X.X.X.X` (e.g., `192.168.1.1`)
@@ -31,20 +51,19 @@ Enter address here: 10.0.0.1
 10.0.0.1 is a class A private address.
 ```
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- Backend: Python (Standard Library)
-- Tools: Terminal / Command-Line
+- Python 3.12+
+- Poetry for packaging
+- No external dependencies
 
-No external libraries or frameworks required.
-
-## Future Improvements
+## 🔮 Future Improvements
 
 - [ ] Add CIDR block validation  
 - [ ] Accept multiple addresses from a file  
 - [ ] Refactor with regex and OOP structure  
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the project  
 2. Create a feature branch (`git checkout -b feature/my-feature`)  
@@ -52,22 +71,10 @@ No external libraries or frameworks required.
 4. Push to your branch (`git push origin feature/my-feature`)  
 5. Open a Pull Request
 
-## Credits
+## 👤 Credits
 
 Created by [David Griffin](https://github.com/DavidTJGriffin)
 
-## License
+## 📄 License
 
-MIT License © 2025 David Griffin  
-
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included  
-in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+This project is licensed under the MIT License.
