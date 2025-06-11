@@ -8,7 +8,7 @@
 
 This Python CLI analyzes a user-entered IPv4 address and returns its class (A–E), whether it's public, private, loopback, or invalid. It’s designed for students or IT learners who want to reinforce their understanding of networking fundamentals.
 
-## 📦 Installation
+## Installation
 
 ### Recommended (via `pipx`)
 
@@ -31,7 +31,7 @@ cd ip-address-classifier
 python ip_address_classifier.py
 ```
 
-## 🚀 Usage
+## Usage
 
 ```bash
 ipclass
@@ -51,19 +51,19 @@ Enter address here: 10.0.0.1
 10.0.0.1 is a class A private address.
 ```
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python 3.12+
 - Poetry for packaging
 - No external dependencies
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Add CIDR block validation  
 - [ ] Accept multiple addresses from a file  
 - [ ] Refactor with regex and OOP structure  
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project  
 2. Create a feature branch (`git checkout -b feature/my-feature`)  
@@ -71,10 +71,10 @@ Enter address here: 10.0.0.1
 4. Push to your branch (`git push origin feature/my-feature`)  
 5. Open a Pull Request
 
-## 👤 Credits
+## Credits
 
 Created by [David Griffin](https://github.com/DavidTJGriffin)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
